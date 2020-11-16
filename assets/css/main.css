@@ -15,7 +15,13 @@
 /*========================================
           Base Style
 ========================================*/
+<<<<<<< Updated upstream
 
+=======
+html, body {
+  height: 100%;
+}
+>>>>>>> Stashed changes
 body {
   font-family: 'Raleway', sans-serif;
   color: #496174;
@@ -367,7 +373,11 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
 
 #home {
   position: relative;
+<<<<<<< Updated upstream
   padding: 190px 0px 120px 0px;
+=======
+  padding: 0px;
+>>>>>>> Stashed changes
   background: url(../img/banner.jpg);
   background-position: center;
   background-size: cover;
@@ -451,6 +461,7 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
 #features .media {
   margin: 35px 0;
 }
+<<<<<<< Updated upstream
 
 #features .media i {
   color: #fff;
@@ -458,6 +469,15 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
   margin-right: 25px;
 }
 
+=======
+
+#features .media i {
+  color: #fff;
+  font-size: 46px;
+  margin-right: 25px;
+}
+
+>>>>>>> Stashed changes
 #features img {
   margin-top: 80px;
 }
