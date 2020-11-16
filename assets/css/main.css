@@ -15,9 +15,14 @@
 /*========================================
           Base Style
 ========================================*/
-html, body {
-  height: 100%;
+
+@media (min-width: 1024px) {
+
+  html, body {
+    height: 100%;
+  }
 }
+
 body {
   font-family: 'Raleway', sans-serif;
   color: #496174;
@@ -350,6 +355,13 @@ header img {
   }
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 /*========================================
            Header
 ========================================*/
@@ -375,6 +387,12 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  #home {
+    padding: 20px 10px;
+  }
 }
 
 #home .caption {
