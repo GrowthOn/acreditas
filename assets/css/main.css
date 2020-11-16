@@ -16,7 +16,13 @@
           Base Style
 ========================================*/
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 991px) and (orientation: landscape) {
+  html, body {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
   html, body {
     height: 100%;
   }
@@ -31,152 +37,10 @@ body {
   height: 100%;
 }
 
-.section-padding {
-  padding: 100px 0;
-}
 
-.typed-cursor {
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/**
- * Simple fade transition,
- */
-
-.mfp-fade.mfp-bg {
-  opacity: 0;
-  -webkit-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-
-.mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
-}
-
-.mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
-}
-
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-  -webkit-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-}
-
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-}
-
-/*-- Preloader --*/
-
-.page-preloader {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #44c5ee;
-  z-index: 100000;
-}
-
-.spinner {
-  position: relative;
-  top: 35%;
-  margin: 100px auto;
-  width: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 10px;
-}
-
-.spinner>div {
-  background-color: #fff;
-  height: 100%;
-  width: 6px;
-  display: inline-block;
-  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-  animation: sk-stretchdelay 1.2s infinite ease-in-out;
-}
-
-.spinner .rect2 {
-  -webkit-animation-delay: -1.1s;
-  animation-delay: -1.1s;
-}
-
-.spinner .rect3 {
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
-}
-
-.spinner .rect4 {
-  -webkit-animation-delay: -0.9s;
-  animation-delay: -0.9s;
-}
-
-.spinner .rect5 {
-  -webkit-animation-delay: -0.8s;
-  animation-delay: -0.8s;
-}
-
-@-webkit-keyframes sk-stretchdelay {
-  0%, 40%, 100% {
-    -webkit-transform: scaleY(0.4);
-  }
-  20% {
-    -webkit-transform: scaleY(1);
-  }
-}
-
-@keyframes sk-stretchdelay {
-  0%, 40%, 100% {
-    transform: scaleY(0.4);
-    -webkit-transform: scaleY(0.4);
-  }
-  20% {
-    transform: scaleY(1);
-    -webkit-transform: scaleY(1);
-  }
-}
-
-/*========================================
-            Typography
-========================================*/
-
-/*-- Typo Style --*/
 
 h1 {
-  font-size: 48px;
+  /* font-size: 48px; */
   font-weight: 700;
   letter-spacing: 0.08em;
   margin-bottom: 35px;
@@ -184,28 +48,10 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  /* font-size: 36px; */
   letter-spacing: 0.08em;
 }
 
-h3 {
-  font-size: 32px;
-  letter-spacing: 0.08em;
-}
-
-h4 {
-  font-size: 24px;
-  letter-spacing: 0.08em;
-}
-
-h5 {
-  font-size: 18px;
-  letter-spacing: 0.08em;
-}
-
-h6 {
-  font-size: 16px;
-}
 
 p {
   font-size: 15px;
@@ -274,40 +120,11 @@ p {
 
 /*-- Navbar Bug Fix --*/
 
-header img {
-  width: 30px;
-}
 
-@media (max-width: 1023px) {
-  /* Navbar Responsive
-  =================================*/
-  .attr-nav {
-    position: absolute;
-    right: 60px;
-  }
-  .attr-nav>ul {
-    padding: 0;
-    margin: 0 -15px -7px 0;
-  }
-  .attr-nav>ul>li>a {
-    padding: 16px 15px 15px;
-  }
-  .attr-nav>ul>li.dropdown>a.dropdown-toggle:before {
-    display: none;
-  }
-  .attr-nav>ul>li.dropdown ul.dropdown-menu {
-    margin-top: 2px;
-    margin-left: 55px;
-    width: 250px;
-    left: -250px;
-    border-top: solid 5px;
-  }
-  .top-search .container {
-    padding: 0 45px;
-  }
-}
 
-@media (max-width: 992px) {
+
+
+@media screen and (max-width: 992px) {
   .home .container {
     text-align: center;
   }
@@ -317,16 +134,16 @@ header img {
   .home .container h2 {
     font-size: 26px;
   }
-  section .col-md-4 {
+  /* section .col-md-4 {
     margin-bottom: 40px;
   }
   #newsletter .form-container .form-inline .btn {
     position: relative;
     right: 143px;
-  }
+  } */
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .home .container {
     text-align: center;
   }
@@ -336,7 +153,7 @@ header img {
   .home .container h2 {
     font-size: 24px;
   }
-  #clients #owl-testimonials .item p {
+  /* #clients #owl-testimonials .item p {
     width: 100%;
   }
   #newsletter .form-container .form-inline .form-control {
@@ -351,7 +168,7 @@ header img {
     position: relative !important;
     top: 0 !important;
     margin-top: 40px;
-  }
+  } */
 }
 
 .wrapper {
@@ -361,22 +178,7 @@ header img {
   height: 100%;
 }
 
-/*========================================
-           Header
-========================================*/
 
-header.navbar.bootsnav.navbar-fixed .navbar-brand {
-  padding: 10px 15px;
-}
-
-header.navbar.bootsnav.navbar-fixed ul.header>li>a {
-  padding: 35px 15px;
-}
-
-header.navbar.bootsnav.navbar-fixed .button-holder {
-  padding: 15px 0;
-  margin-left: 40px;
-}
 
 .home {
   position: relative;
@@ -388,7 +190,7 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
   height: 100%;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .home {
     padding: 20px 10px;
   }
@@ -461,7 +263,7 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .center-content {
     width: 100%;
   }
@@ -469,73 +271,4 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
 
 #imagem {
   width: 250px;
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-
-/*========================================
-           Features
-========================================*/
-
-#features {
-  background: #44c5ee;
-  color: #fff;
-  padding: 80px 0;
-}
-
-#features .media {
-  margin: 35px 0;
-}
-
-#features .media i {
-  color: #fff;
-  font-size: 46px;
-  margin-right: 25px;
-}
-
-#features img {
-  margin-top: 80px;
-}
-
-/*========================================
-           Footer
-========================================*/
-
-footer {
-  background: #44c5ee;
-  color: #fff;
-  padding: 40px 0;
-}
-
-footer hr {
-  margin: 40px 0;
-}
-
-footer img {
-  width: 50px;
-}
-
-footer ul {
-  padding: 0;
-}
-
-footer li {
-  display: inline-block;
-}
-
-footer li a {
-  font-size: 20px;
-  padding: 12px;
-  color: #fff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-footer li a:hover, footer li a:focus, footer li a:active {
-  color: #496174;
 }
