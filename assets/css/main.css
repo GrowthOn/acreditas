@@ -18,7 +18,9 @@ body {
   color: #496174;
   background: #fff;
   font-size: 14px;
-  line-height: 24px; }
+  line-height: 24px;
+
+}
 
 .section-padding {
   padding: 100px 0; }
@@ -301,13 +303,13 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
 
 #home {
   position: relative;
-  padding: 190px 0px 120px 0px;
+  padding: 0px 0px 120px 0px;
   background: url(../img/banner.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
   #home .caption {
-    padding: 60px 0; }
+    padding: 0px 0; }
     #home .caption h2 {
       color: #fff; }
     #home .caption p {
@@ -338,6 +340,10 @@ header.navbar.bootsnav.navbar-fixed .button-holder {
       color: #555;
       background-color: #fff;
       border-radius: 3px; }
+
+#imagem{
+      width: 250px;
+}
 
 #particles-js {
   position: absolute;
