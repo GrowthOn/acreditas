@@ -37,8 +37,6 @@ body {
   height: 100%;
 }
 
-
-
 h1 {
   /* font-size: 48px; */
   font-weight: 700;
@@ -51,7 +49,6 @@ h2 {
   /* font-size: 36px; */
   letter-spacing: 0.08em;
 }
-
 
 p {
   font-size: 15px;
@@ -120,10 +117,6 @@ p {
 
 /*-- Navbar Bug Fix --*/
 
-
-
-
-
 @media screen and (max-width: 992px) {
   .home .container {
     text-align: center;
@@ -178,12 +171,11 @@ p {
   height: 100%;
 }
 
-
-
 .home {
   position: relative;
   padding: 0px;
-  background: url(../img/banner.jpg);
+  background: url(../img/bg1.png);
+  ;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
