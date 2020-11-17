@@ -23,6 +23,19 @@
 
         gtag('config', 'UA-183231851-1');
     </script>
+
+    <!-- Hotjar Tracking Code for https://growthon.github.io/acreditas -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hjfunction(){(h.hj.q=h.hj.q[]).push(arguments)};
+            h._hjSettings={hjid:2102729,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-%27,%27.js?sv=%27);
+    </script>
+    
 </head>
 <body>
     <section class="home">
@@ -42,20 +55,28 @@
                 </div>
                 <div class="col-md-5 col-md-offset-1">
                     <form class="signup-form" method="POST" action="https://smtl.gama.academy/leads/1ccc7f63-25e3-11eb-bf8d-0d63c80760d2">
-                        <h2 class="text-center">+ 2000 pessoas já baixaram, só falta você!</h2>
+                        <h2 class="text-center">
+                            + 2000 pessoas já baixaram, só falta você!
+                        </h2>
                         <hr>
                         <div class="form-group">
-	                        <input type="text" class="form-control" placeholder="Nome completo" name="name" pattern="^\D{2,}\s[\D\s]{2,}$" title="Digite seu nome completo" required>
+	                        <input type="text" class="form-control" placeholder="Nome completo" name="name" pattern="^\D{2,}\s[\D\s]{2,}$" required>
                         </div>
                         <div class="form-group">
                             <input type="email" name="email" class="form-control" placeholder="Digite seu e-mail" required="required">
+                        </div>
+                        <div class="form-group">
                             <input name="redirectTo" type="hidden" value="https://growthon.github.io/acreditas/thank-you.html" />
                             <input name="debugMode" type="hidden" value="true"/>
                         </div>
+                        
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-blue btn-block" disabled>BAIXE AGORA!!</button>
+                            <button type="submit" class="btn btn-blue btn-block" disabled>
+                                BAIXE AGORA!!
+                            </button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
