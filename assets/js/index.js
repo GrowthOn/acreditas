@@ -2,8 +2,11 @@ const form = document.querySelector('form')
 const fields = document.querySelectorAll('input')
 const button = document.querySelector('button')
 
+window.onload = () => {
+    fields.forEach(field => field.value = '')
+    button.disabled = true
+}
+
 fields.forEach(field => {
-    field.addEventListener('input', () => {
-        return button.disabled = !form.checkValidity()
-    })
+    field.addEventListener('input', () => button.disabled = !form.checkValidity())
 })
