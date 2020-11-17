@@ -174,8 +174,7 @@ p {
 .home {
   position: relative;
   padding: 0px;
-  background: url(../img/bg1.png);
-  ;
+  background: url(../img/bg2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -262,5 +261,6 @@ p {
 }
 
 #imagem {
-  width: 250px;
+  width: 350px;
+  margin-bottom: 80px;
 }
