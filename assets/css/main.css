@@ -186,6 +186,44 @@ p {
   text-align: center;
 }
 
+.left-text {
+  color: #fff;
+}
+
+.left-text p {
+  letter-spacing: 0.08em;
+}
+
+.headline {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 35px;
+  margin-top: 10px;
+  line-height: 1.1;
+}
+
+.question {
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.bottom-text {
+  font-size: 18px;
+  margin-top: 25px;
+  line-height: 24px;
+}
+
+form p {
+  font-size: 30px;
+  margin: 20px auto 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
 label {
   font-weight: normal;
 }
