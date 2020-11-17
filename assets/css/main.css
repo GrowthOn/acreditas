@@ -186,6 +186,10 @@ p {
   text-align: center;
 }
 
+label {
+  font-weight: normal;
+}
+
 @media screen and (max-width: 767px) {
   .center-content {
     width: 100%;
