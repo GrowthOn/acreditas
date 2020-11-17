@@ -1,9 +1,9 @@
 const form = document.querySelector('form')
-const fields = document.querySelectorAll('input')
+const fields = [...document.querySelectorAll('input')]
 const button = document.querySelector('button')
 
 window.onload = () => {
-    fields.forEach(field => field.value = '')
+    fields.filter(field => field.type !== 'hidden').forEach(field => field.value = '')
     button.disabled = true
 }
 
