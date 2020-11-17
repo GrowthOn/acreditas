@@ -1,13 +1,3 @@
-/*------------------------------------------------------------------
-
-    Main Style Stylesheet
-    Project:        Vortex. |  StartUp Landing Page Template
-    Version:        1.0
-    Author:         Gnawi Themes
-    Last change:    8/29/2016
-    Primary use:    Landing,Startup and Showcase.
-
--------------------------------------------------------------------*/
 
 /*-- Imports (only visible on scss file) --*/
 
@@ -38,7 +28,6 @@ body {
 }
 
 h1 {
-  /* font-size: 48px; */
   font-weight: 700;
   letter-spacing: 0.08em;
   margin-bottom: 35px;
@@ -46,7 +35,6 @@ h1 {
 }
 
 h2 {
-  /* font-size: 36px; */
   letter-spacing: 0.08em;
 }
 
@@ -79,41 +67,6 @@ p {
   color: #496174;
 }
 
-.btn-transparent {
-  background: transparent;
-  padding: 10px 28px;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  outline: none !important;
-}
-
-.btn-transparent:hover, .btn-transparent:focus, .btn-transparent:active {
-  background: #fff;
-  color: #496174;
-}
-
-.btn-white {
-  background: #fff;
-  padding: 10px 28px;
-  color: #496174;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  outline: none !important;
-}
-
-.btn-white:hover, .btn-white:focus, .btn-white:active {
-  background: transparent;
-  color: #fff;
-}
 
 /*-- Navbar Bug Fix --*/
 
@@ -127,13 +80,7 @@ p {
   .home .container h2 {
     font-size: 26px;
   }
-  /* section .col-md-4 {
-    margin-bottom: 40px;
-  }
-  #newsletter .form-container .form-inline .btn {
-    position: relative;
-    right: 143px;
-  } */
+
 }
 
 @media screen and (max-width: 767px) {
@@ -146,22 +93,7 @@ p {
   .home .container h2 {
     font-size: 24px;
   }
-  /* #clients #owl-testimonials .item p {
-    width: 100%;
-  }
-  #newsletter .form-container .form-inline .form-control {
-    width: 80%;
-  }
-  #newsletter .form-container .form-inline .btn {
-    position: relative;
-    right: 40px;
-    margin-top: 40px;
-  }
-  #contact .contact-info {
-    position: relative !important;
-    top: 0 !important;
-    margin-top: 40px;
-  } */
+  
 }
 
 .wrapper {
