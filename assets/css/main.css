@@ -54,7 +54,6 @@ main {
     width: 60%;
     color: #fff;
     font-size: 30px;
-    /* line-height: 47px; */
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 30px;
@@ -79,7 +78,6 @@ main {
 .under-banner p.highlight {
     font-weight: 700;
     font-size: 30px;
-    /* line-height: 47px; */
 }
 
 .under-banner p.last-text {
