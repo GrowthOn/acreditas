@@ -16,19 +16,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
     <title>ACREDITA$ - Saúde financeira</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183231851-1"></script>
-    <script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- <link href="assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    
+    <link href="assets/css/new.css" rel="stylesheet">
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183231851-1"></script> -->
+    <!-- <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-183231851-1');
     </script>
-    <!-- Hotjar Tracking Code for https://growthon.github.io/acreditas -->
+    
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -38,10 +41,10 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    </script> -->
 </head>
 <body>
-    <section class="home">
+    <!-- <section class="home">
         <div class="container wrapper">
             <div class="row">
                 <div class="col-md-12">
@@ -49,8 +52,12 @@
                 </div>
             </div>
             <div class="row">
+                <div class="headline">
+                    <p>Como está sua saúde financeira?</p>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-md-6 left-text">
-                    <p class="headline">Como está sua saúde financeira?</p>
                     <p class="question">Está livre de dívidas?</p>
                     <p class="question">Ganha mais do que gasta?</p>
                     <p class="question">Tem dinheiro guardado para se aposentar com tranquilidade?</p>
@@ -73,7 +80,7 @@
                         <div class="form-group">
                             <input name="redirectTo" type="hidden" value="https://growthon.github.io/acreditas/thank-you" />
                             <!-- <input name="debugMode" type="hidden" value="true" /> -->
-                        </div>
+                        <!-- </div>
                         
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-blue btn-block" disabled>
@@ -85,7 +92,44 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <main>
+        <section id="logo">
+            <img src="./assets/img/LogoAcreditas.svg" />
+        </section>
+        <section id="content">
+            <div class="content-left">
+                <div class="banner">
+                    <div class="image-wrapper">
+                        <div class="around-img">
+                            <img src="assets/img/sino.svg" />
+                        </div>
+                    </div>
+                    <p>Guia prático de como se organizar financeiramente</p>
+                </div>
+                <div class="under-banner">
+                    <p class="highlight">COMO ESTÁ SUA SAÚDE FINANCEIRA?</p>
+                    <p>Está livre de dívidas?</p>
+                    <p>Ganha mais do que gasta?</p>
+                    <p>Tem dinheiro guardado para se aposentar com tranquilidade?</p>
+                    <p class="last-text">Se você respondeu não para alguma dessas perguntas, você PRECISA baixar este ebook e melhorar sua saúde financeira!</p>
+                </div>
+            </div>
+            <div class="content-right">
+                <p>Preencha seu nome, e-mail e baixe GRATUITAMENTE!</p>
+                <hr />
+                <form method="POST" action="https://smtl.gama.academy/leads/1ccc7f63-25e3-11eb-bf8d-0d63c80760d2">
+                    <label for="name_field">Nome completo:</label>
+                    <input type="text" id="name_field" class="form-control" name="name" pattern="^\D{2,}\s[\D\s]{2,}$" required >
+                    <label for="email_field">Digite seu e-mail:</label>
+                    <input type="email" id="email_field" name="email" class="form-control" required />
+                    <input name="redirectTo" type="hidden" value="https://growthon.github.io/acreditas/thank-you" />
+                    <input name="debugMode" type="hidden" value="true" />
+                    <button type="submit" class="btn btn-blue btn-block" disabled>E-book GRÁTIS</button>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./assets/js/index.js"></script>
 </body>
 </html>
