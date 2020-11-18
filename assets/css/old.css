@@ -1,0 +1,240 @@
+
+/*-- Imports (only visible on scss file) --*/
+
+@import "https://fonts.googleapis.com/css?family=Raleway:300,400,700";
+/*========================================
+          Base Style
+========================================*/
+
+@media screen and (min-width: 991px) and (orientation: landscape) {
+  html, body {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  html, body {
+    height: 100%;
+  }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #496174;
+  background: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  height: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+h2 {
+  letter-spacing: 0.08em;
+}
+
+p {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  line-height: 24px;
+}
+
+/*========================================
+            Buttons Style
+========================================*/
+
+.btn-blue {
+  background: #44c5ee;
+  padding: 10px 28px;
+  border: 2px solid #44c5ee;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  box-shadow: 0px 0px 60px 0px rgba(68, 197, 238, 0.6);
+  outline: none !important;
+}
+
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active {
+  background: #fff;
+  color: #496174;
+}
+
+
+/*-- Navbar Bug Fix --*/
+
+@media screen and (max-width: 992px) {
+  .home .container {
+    text-align: center;
+  }
+  .home .container h1 {
+    font-size: 36px;
+  }
+  .home .container h2 {
+    font-size: 26px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .home .container {
+    text-align: center;
+  }
+  .home .container h1 {
+    font-size: 34px;
+  }
+  .home .container h2 {
+    font-size: 24px;
+  }
+  
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.home {
+  position: relative;
+  padding: 0px;
+  background: url(../img/bg2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    padding: 20px 10px;
+  }
+}
+
+.home .caption {
+  padding: 0px 0;
+}
+
+.home .caption h2 {
+  color: #fff;
+}
+
+.home .caption p {
+  font-size: 18px;
+  margin-top: 25px;
+  color: #fff;
+}
+
+.home .caption .btn {
+  margin-top: 25px;
+}
+
+.home .caption .btn-blue {
+  margin-left: 15px;
+}
+
+.home .caption .btn-blue i {
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+
+.home .signup-form {
+  background-color: #fff;
+  padding: 45px;
+  border-radius: 5px;
+}
+
+.home .signup-form input {
+  border: 1px solid #eee;
+  height: 38px;
+  box-shadow: none !important;
+}
+
+.home .signup-form input:focus {
+  border-color: #44c5ee;
+}
+
+.home .signup-form .form-control {
+  font-size: 16px;
+  padding: 10px 15px;
+  color: #555;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.vh-fix {
+  height: 100vh;
+}
+
+.flex-fix {
+  display: flex;
+  justify-content: center;
+}
+
+.center-content {
+  width: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+.left-text {
+  color: #fff;
+}
+
+.left-text p {
+  letter-spacing: 0.08em;
+}
+
+.headline {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 35px;
+  margin-top: 10px;
+  line-height: 1.1;
+}
+
+.question {
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.bottom-text {
+  font-size: 18px;
+  margin-top: 25px;
+  line-height: 24px;
+}
+
+form p {
+  font-size: 30px;
+  margin: 20px auto 10px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+label {
+  font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .center-content {
+    width: 100%;
+  }
+}
+
+#imagem {
+  width: 350px;
+  margin-bottom: 30px;
+}
