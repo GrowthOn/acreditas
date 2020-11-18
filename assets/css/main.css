@@ -13,7 +13,7 @@ body {
 }
 
 main {
-	height: 100%;
+	min-height: 100%;
 	display: flex;
 	flex-direction: column;
     align-items: center;
@@ -51,7 +51,6 @@ main {
 }
 
 .banner p {
-    width: 60%;
     color: #fff;
     font-size: 30px;
     text-transform: uppercase;
@@ -155,6 +154,60 @@ form button:disabled {
     cursor: not-allowed;
 }
 
+#thank-you {
+    max-width: 831px;
+    color: #fff;
+    text-align: center;
+}
+
+#thank-you h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#thank-you p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#thank-you span {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#thank-you a {
+    text-decoration: none;
+}
+
+#thank-you p a {
+    color: #44C5EE;
+}
+
+.download-button {
+	width: 264px;
+	height: 58px;
+	background: #44C5EE;
+	border-radius: 100px;
+	display: inline-flex;
+	justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FDFDFD;
+}
+
+@media screen and (max-width: 992px) and (orientation: landscape) {
+    html, body {
+        height: unset;
+    }
+
+    main {
+        padding: 20px 0;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .banner p {
         font-size: 22px;
@@ -186,7 +239,7 @@ form button:disabled {
 
 @media screen and (max-width: 767px) {
     main {
-        padding: 0 20px;
+        padding: 20px;
     }
 
     #logo {
