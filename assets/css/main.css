@@ -26,6 +26,7 @@ main {
 
 #logo {
     margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 #content {
@@ -152,6 +153,10 @@ form button {
 form button:disabled {
     opacity: .4;
     cursor: not-allowed;
+}
+
+#video {
+    padding: 50px 0;
 }
 
 #thank-you {
@@ -308,5 +313,10 @@ form button:disabled {
 
     form label {
         font-size: 12px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
     }
 }
