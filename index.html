@@ -41,46 +41,126 @@
         <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/970656a389c75f737d23c595d/052e8a24d93cf7156fd757c33.js");</script>
     </head>
     <body>
+        <header>
+            <nav>
+                <a href="#content">
+                    <img id="logo" src="./assets/img/LogoAcreditasLP.svg" alt="Acredita$" />
+                </a>
+                <ul class="menu-closed">
+                    <li id="home"><a href="#content">Home</a></li>
+                    <li id="quem-somos"><a href="#video">Quem somos</a></li>
+                    <li id="parceria"><a href="#parceria-section">Parceria</a></li>
+                    <li id="nosso-conteudo"><a href="#nosso-material">Nosso conteúdo</a></li>
+                </ul>
+                <button id="menu-toggle">
+                    <img src="./assets/img/menu-icon.svg" />
+                </button>
+            </nav>
+        </header>
         <main>
-            <section id="logo">
-                <img src="./assets/img/LogoAcreditas.svg" alt="Acredita$" />
-            </section>
-            <section id="content">
-                <div class="content-left">
-                    <div class="banner">
-                        <div class="image-wrapper">
-                            <div class="around-img">
-                                <img src="assets/img/sino.svg" alt="" />
+            <section id="content" class="content-background">
+                <div class="section-wrapper">
+                    <div class="content-left">
+                        <div class="banner">
+                            <div class="image-wrapper">
+                                <div class="around-img">
+                                    <img src="assets/img/sino.svg" alt="" />
+                                </div>
                             </div>
+                            <p>[KIT] GUIA PRATICO DE ORGANIZAÇÃO FINANCEIRA + PLANILHA DE FINANÇAS 2021</p>
                         </div>
-                        <p>[KIT] GUIA PRATICO DE ORGANIZAÇÃO FINANCEIRA + PLANILHA DE FINANÇAS 2021</p>
+                        <div class="under-banner">
+                            <p class="highlight">COMO ESTÁ SUA SAÚDE FINANCEIRA?</p>
+                            <p>Está livre de dívidas?</p>
+                            <p>Ganha mais do que gasta?</p>
+                            <p>Tem dinheiro guardado para se aposentar com tranquilidade?</p>
+                            <p class="last-text">Se você respondeu não para alguma dessas perguntas, você PRECISA baixar este ebook e melhorar sua saúde financeira!</p>
+                        </div>
                     </div>
-                    <div class="under-banner">
-                        <p class="highlight">COMO ESTÁ SUA SAÚDE FINANCEIRA?</p>
-                        <p>Está livre de dívidas?</p>
-                        <p>Ganha mais do que gasta?</p>
-                        <p>Tem dinheiro guardado para se aposentar com tranquilidade?</p>
-                        <p class="last-text">Se você respondeu não para alguma dessas perguntas, você PRECISA baixar este ebook e melhorar sua saúde financeira!</p>
+                    <div class="content-right">
+                        <p>Preencha seu nome, e-mail e baixe GRATUITAMENTE!</p>
+                        <hr />
+                        <form method="POST" action="https://smtl.gama.academy/leads/1ccc7f63-25e3-11eb-bf8d-0d63c80760d2">
+                            <label for="name_field">Nome completo:</label>
+                            <input type="text" id="name_field" name="name" pattern="^\D{2,}\s[\D\s]{2,}$" required />
+                            <label for="email_field">Digite seu e-mail:</label>
+                            <input type="email" id="email_field" name="email" required />
+                            <input name="redirectTo" type="hidden" value="https://growthon.github.io/acreditas/thank-you" />
+                            <!-- <input name="debugMode" type="hidden" value="true" /> -->
+                            <p>Fique tranquilo, não enviamos spam!</p>
+                            <button type="submit">E-book GRÁTIS</button>
+                        </form>
                     </div>
-                </div>
-                <div class="content-right">
-                    <p>Preencha seu nome, e-mail e baixe GRATUITAMENTE!</p>
-                    <hr />
-                    <form method="POST" action="https://smtl.gama.academy/leads/1ccc7f63-25e3-11eb-bf8d-0d63c80760d2">
-                        <label for="name_field">Nome completo:</label>
-                        <input type="text" id="name_field" class="form-control" name="name" pattern="^\D{2,}\s[\D\s]{2,}$" required >
-                        <label for="email_field">Digite seu e-mail:</label>
-                        <input type="email" id="email_field" name="email" class="form-control" required />
-                        <input name="redirectTo" type="hidden" value="https://growthon.github.io/acreditas/thank-you" />
-                        <!-- <input name="debugMode" type="hidden" value="true" /> -->
-                        <button type="submit" class="btn btn-blue btn-block" disabled>E-book GRÁTIS</button>
-                    </form>
                 </div>
             </section>
-            <section id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/a_Ex4OYEw9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <section id="video" class="section-with-content">
+                <div class="section-wrapper flex-column">
+                    <h2>Quem somos</h2>
+                    <div class="video-content">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/a_Ex4OYEw9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+                        <div class="video-text">
+                            <p>A Acredita$ surgiu em 2020, quando, do dia para a noite, o mundo parou e uma pandemia bateu em nossa porta. Perdemos emprego, tivemos de nos readaptar e saber como nos organizar melhor financeiramente.</p>
+                            <br>
+                            <p>Surgimos para facilitar sua vida e, juntos, conseguirmos a tão sonhada saúde financeira! Confira nossos conteúdos!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="parceria-section" class="section-with-content">
+                <div class="section-wrapper flex-column">
+                    <h2>Parceria</h2>
+                    <div class="parceria-content">
+                        <div class="parc-text">
+                            <p>Para te deixar mais antenado sobre planejamento financeiro e investimentos, fechamos uma parceria incrível com a Gabriela Cabral.</p>
+                            <br>
+                            <p>Gabriela Cabral é consultora financeira e especializada em investimentos. Como parceira da Acredita$, ela preparou um Bônus incrível para você, uma planilha super completa e fácil de usar para você gerir suas finanças.</p>
+                        </div>
+                        
+                        <img src="assets/img/gabrielaCabral.png">
+                    </div> 
+                </div>
+            </section>
+
+            <section id="nosso-material" class="section-with-content">
+                <h2>Nosso Conteúdo</h2>
+                <div class="nosso-content">
+                    <div>
+                        <img class="img1" src="assets/img/ebook.png">
+                        <div class="material">
+                            <p><strong>e-book</strong></p>
+                            <p>com mais de 10 páginas</p> 
+                            <p>de conteúdo</p>
+                        </div>
+                    </div>
+                    
+                    <img class="img2" src="assets/img/mais.png">                
+                    
+                    <div>                    
+                        <img class="img3" src="assets/img/computador.png">
+                        <div class="material">
+                            <p><strong>planilha 2021</strong></p>
+                            <p>para entrar o novo ano</p> 
+                            <p>promessas cumpridas</p>
+                        </div>
+                    </div>
+                </div> 
             </section>
         </main>
+
+        <footer>
+            <p>GrowthOn | © 2020 All rights reserved</p>
+            <div id="social">
+                <a href="#">
+                    <img src="./assets/img/fb-icon.svg" alt="Link para o Facebook">
+                </a>
+                <a href="https://www.instagram.com/acreditasbr/">
+                    <img src="./assets/img/ig-icon.svg" alt="Link para o Instagram">
+                </a>
+            </div>
+        </footer>
         <script src="./assets/js/index.js"></script>
     </body>
 </html>
