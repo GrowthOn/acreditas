@@ -43,12 +43,14 @@
     <body>
         <header>
             <nav>
-                <img id="logo" src="./assets/img/LogoAcreditasLP.svg" alt="Acredita$" />
+                <a href="#content">
+                    <img id="logo" src="./assets/img/LogoAcreditasLP.svg" alt="Acredita$" />
+                </a>
                 <ul class="menu-closed">
-                    <li id="home">Home</li>
-                    <li id="quem-somos">Quem somos</li>
-                    <li id="parceria">Parceria</li>
-                    <li id="nosso-conteudo">Nosso conteúdo</li>
+                    <li id="home"><a href="#content">Home</a></li>
+                    <li id="quem-somos"><a href="#video">Quem somos</a></li>
+                    <li id="parceria"><a href="#parceria-section">Parceria</a></li>
+                    <li id="nosso-conteudo"><a href="#nosso-material">Nosso conteúdo</a></li>
                 </ul>
                 <button id="menu-toggle">
                     <img src="./assets/img/menu-icon.svg" />
@@ -56,7 +58,7 @@
             </nav>
         </header>
         <main>
-            <section id="content">
+            <section id="content" class="content-background">
                 <div class="section-wrapper">
                     <div class="content-left">
                         <div class="banner">
@@ -154,12 +156,11 @@
                 <a href="#">
                     <img src="./assets/img/fb-icon.svg" alt="Link para o Facebook">
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/acreditasbr/">
                     <img src="./assets/img/ig-icon.svg" alt="Link para o Instagram">
                 </a>
             </div>
         </footer>
-        <script src="./assets//js/zenscroll/zenscroll-min.js"></script>
         <script src="./assets/js/index.js"></script>
     </body>
 </html>

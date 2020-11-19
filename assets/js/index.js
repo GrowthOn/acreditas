@@ -3,7 +3,7 @@ const fields = [...document.querySelectorAll('input')].filter(field => field.typ
 const formButton = document.querySelector('form button')
 const header = document.querySelector('header')
 const logo = document.querySelector('#logo')
-const menuItems = [...document.querySelectorAll('nav ul li')]
+const menuItems = [...document.querySelectorAll('nav ul li a')]
 
 window.onload = () => {
     fields.forEach(field => field.value = '')
@@ -11,10 +11,8 @@ window.onload = () => {
 
 [logo, ...menuItems].forEach(item => item.addEventListener('click', e => {
     const {id} = e.target
-    zenscroll.toY(0)
     body.removeEventListener('touchstart', closeMenu)
     if (id === 'logo') return
-    // alert('clik')
     menu.classList.toggle('menu-closed')
 }))
 

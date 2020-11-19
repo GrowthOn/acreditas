@@ -51,9 +51,9 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
+nav ul li a {
     color: #fff;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 nav ul li:nth-child(1) {
@@ -78,6 +78,9 @@ section {
 
 #content {
     padding: 100px 0;
+}
+
+.content-background {
     background: url(../img/bg2.png);
     background-position: center;
     background-size: cover;
@@ -347,7 +350,7 @@ footer p{
     width: 90%;
     color: #fff;
     text-align: center;
-    margin-top: 85px;
+    margin: 85px 0;
 }
 
 #thank-you h1 {
@@ -538,6 +541,7 @@ footer p {
 
     nav ul li:nth-child(1), nav ul li:nth-child(2), nav ul li:nth-child(3) {
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        margin: 0;
     }
 
     nav ul li:nth-child(4) {
