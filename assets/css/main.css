@@ -334,13 +334,15 @@ footer p {
         right: 0;
         background: linear-gradient(270deg, #17D1CE -4.9%, #169BC7 79.88%);
         text-align: center;
-        padding: 0 30px 30px 30px;
+        padding: 0 30px;
         display: initial;
     }
    
     nav ul li {
         text-transform: uppercase;
         font-weight: 700;
+        margin-right: 0;
+        padding: 20px 0;
     }
 
     nav ul li:nth-child(1) {
@@ -348,8 +350,6 @@ footer p {
     }
 
     nav ul li:nth-child(1), nav ul li:nth-child(2), nav ul li:nth-child(3) {
-        margin-right: 0;
-        padding: 20px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     }
 

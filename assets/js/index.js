@@ -9,10 +9,13 @@ window.onload = () => {
     fields.forEach(field => field.value = '')
 }
 
-[logo, ...menuItems].forEach(item => item.addEventListener('click', () => {
+[logo, ...menuItems].forEach(item => item.addEventListener('click', e => {
+    const {id} = e.target
     zenscroll.toY(0)
-    menu.classList.toggle('menu-closed')
     body.removeEventListener('touchstart', closeMenu)
+    if (id === 'logo') return
+    // alert('clik')
+    menu.classList.toggle('menu-closed')
 }))
 
 const body = document.querySelector('body')
