@@ -22,7 +22,9 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 60px;
 }
+
 
 #logo {
     margin-bottom: 40px;
@@ -155,9 +157,138 @@ form button:disabled {
     cursor: not-allowed;
 }
 
+
+/* Quem somos ---------------------------- */
+
 #video {
-    padding: 50px 0;
+    padding: 60px 0;
+    background: #ffff;
 }
+
+#video h1{
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    color: #B7D972;
+}
+
+.video-content{
+    display: flex;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.video-content iframe{
+    width: 639px;
+    
+}
+
+.video-text{
+    color: #16ADC9;
+    font-size: 28px;
+    margin:60px;
+    width: 582px;
+}
+
+/* Parceria  ---------------------------- */
+
+#parceria-section{
+    background: #17D1CE;
+    padding-bottom: 60px;
+}
+
+#parceria-section h1{
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 88px;
+}
+
+.parceria-content{
+    display: flex;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.parc-text{
+    font-size: 28px;
+    margin:60px;
+    color: #FFFFFF;
+}
+
+.parceria-content img{
+    width: 500px;
+}
+
+/* nosso conteudo ---------------------------- */
+
+#nosso-conteudo{
+    margin: 100px;
+    background: #ffff;
+}
+
+#nosso-conteudo h1{
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    color: #B7D972;
+}
+
+.nosso-content{
+    display: flex;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.nosso-content img.img1{
+    width: 500px;
+
+}
+.nosso-content img.img2{
+    width: 5%;
+}
+.nosso-content img.img3{
+    width: 475px;
+    padding-top: 28px;
+}
+.material{
+    color: #16A0C8;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* footer ------------------------------------ */
+
+footer{
+    display: flex;
+    background: #F0F0F0;
+    padding: 10px;
+    color: #A0A0A0;
+}
+
+footer p{
+    margin-top: 12px;
+    display: flex;
+}
+
+.right-content{
+    text-align: right;
+    margin-left: auto;
+}
+.right-content a{
+    margin-left: 5px;
+
+}
+
+.right-content a img{
+    width: 40px;
+}
+
+/* thank-you page ---------------------------- */
 
 #thank-you {
     max-width: 831px;
@@ -203,6 +334,8 @@ form button:disabled {
     color: #FDFDFD;
 }
 
+
+
 @media screen and (max-width: 992px) and (orientation: landscape) {
     html, body {
         height: unset;
@@ -239,6 +372,23 @@ form button:disabled {
 
     .content-right p {
         font-size: 20px;
+    }
+
+    /*-------- Quem somos -----------*/
+    .video-content{
+        flex-direction: column;
+    }
+    .video-content iframe{
+        margin-top: 40px;
+    }
+
+    /*-------- Parceria -----------*/
+    .parceria-content{
+        flex-direction: column;
+    }
+    
+    .parceria-content img{
+        order: -1;
     }
 }
 
@@ -318,5 +468,84 @@ form button:disabled {
     iframe {
         width: 100%;
         height: auto;
+    }
+
+    /*--------Quem somos -----------*/
+
+    .video-content{
+        flex-direction: column;
+    }
+
+    .video-text{
+        width: 350px;
+    }
+
+    .video-content iframe{
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    /*--------nosso conteúdo -----------*/
+    .parceria-content{
+        flex-direction: column;
+    }
+    
+    .parceria-content img{
+        order: -1;
+        width: 90%;
+    }
+
+    .parc-text{
+        margin:10px;
+        padding-top: 20px;
+    }
+
+    /*--------nosso conteúdo -----------*/
+    #nosso-conteudo{
+        margin: 10px;
+    }
+    .nosso-content{
+        flex-direction: column;   
+    }
+    .nosso-content img.img1{
+        width: 350px;
+    }
+    .nosso-content img.img2{
+        margin-top:70px;
+        width: 50px;
+    }
+    .nosso-content img.img3{
+        width: 350px;
+    }
+    .material{
+        font-size: 28px;
+        margin-bottom: -40px;
+}
+
+@media screen and (max-width: 576px) {
+    .right-content a img{
+        width: 30px;
+    }
+    .video-text{
+        width: 300px;
+        font-size: 24px;
+    }
+    .parc-text{
+        margin:5px;
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    #nosso-conteudo{
+        padding-bottom: 30px;
+    }
+    .nosso-content img.img1{
+        width: 300px;
+    }
+    .nosso-content img.img2{
+        width: 50px;
+    }
+    .nosso-content img.img3{
+        width: 300px;
     }
 }
