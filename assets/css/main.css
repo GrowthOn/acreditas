@@ -13,19 +13,12 @@ body {
 }
 
 main {
-	min-height: 100%;
 	display: flex;
 	flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(../img/bg2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 60px;
+    margin-top: 85px;
 }
-
-
 
 header {
     width: 100%;
@@ -71,16 +64,35 @@ nav ul li:nth-child(2), nav ul li:nth-child(3) {
     margin-right: 20px;
 }
 
-#checkbox-toggle, #menu-toggle {
+#menu-toggle {
     display: none;
 }
 
+section {
+    width: 100%;
+}
+
+.section-with-content {
+    padding: 80px 0;
+}
+
 #content {
-	display: flex;
+    padding: 100px 0;
+    background: url(../img/bg2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-wrapper {
+    display: flex;
     max-width: 1170px;
     width: 90%;
     margin: 0 auto;
-    padding-top: 135px;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .content-left {
@@ -206,25 +218,27 @@ form button:disabled {
     cursor: not-allowed;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 
 /* Quem somos ---------------------------- */
 
 #video {
-    padding: 60px 0;
     background: #ffff;
 }
 
-#video h1{
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
+#video h2 {
     color: #B7D972;
 }
 
 .video-content{
     display: flex;
     align-items: center;
-    margin: 0px 30px;
 }
 
 .video-content iframe{
@@ -235,7 +249,7 @@ form button:disabled {
 .video-text{
     color: #16ADC9;
     font-size: 28px;
-    margin:60px;
+    margin-left: 60px;
     width: 582px;
     text-align: justify;
 }
@@ -247,50 +261,37 @@ form button:disabled {
     padding-bottom: 60px;
 }
 
-#parceria-section h1{
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
+#parceria-section h2{
     color: #FFFFFF;
-    padding-top: 88px;
 }
 
 .parceria-content{
     display: flex;
     align-items: center;
-    margin: 20px 30px;
 }
 
 .parc-text{
     font-size: 28px;
-    margin:60px;
     color: #FFFFFF;
     text-align: justify;
+    flex-basis: 60%;
 }
 
 .parceria-content img{
-    width: 500px;
+    max-width: 500px;
+    flex-basis: 40%;
 }
 
 /* nosso conteudo ---------------------------- */
 
-#nosso-material{
-    margin: 100px;
-    background: #ffff;
-}
-
-#nosso-material h1{
-    font-weight: 600;
-    font-size: 60px;
-    text-align: center;
-    justify-content: center;
+#nosso-material h2{
     color: #B7D972;
 }
 
 .nosso-content{
     display: flex;
     align-items: center;
-    margin: 20px 30px;
+    justify-content: center;
 }
 
 .nosso-content img.img1{
@@ -309,7 +310,7 @@ form button:disabled {
     font-size: 40px;
     width: 100%;
     text-align: center;
-
+    margin-top: 20px;
 }
 
 /* footer ------------------------------------ */
@@ -453,16 +454,30 @@ footer p {
         font-size: 14px;
     }
 
-    .content-right p {
-        font-size: 20px;
+    .section-with-content {
+        padding: 35px 0;
     }
 
     /*-------- Quem somos -----------*/
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
     .video-content{
         flex-direction: column;
     }
     .video-content iframe{
-        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .video-text {
+        margin: 0;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
     }
 
     /*-------- Parceria -----------*/
@@ -473,12 +488,27 @@ footer p {
     .parceria-content img{
         order: -1;
     }
+
+    .parc-text {
+        margin-top: 30px;
+        font-size: 24px;
+    }
+
+    .nosso-content {
+        flex-direction: column;
+    }
+
+    .material {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .nosso-content img.img2 {
+        margin: 30px 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
-    main {
-        padding: 20px;
-    }
 
     nav {
         padding: 20px 0;
@@ -532,6 +562,10 @@ footer p {
     #content {
         flex-direction: column;
         width: 100%;
+    }
+
+    .section-wrapper {
+        flex-direction: column;
     }
 
     .banner {
@@ -594,24 +628,23 @@ footer p {
         margin: 30px 0 20px;
     }
 
-    iframe {
-        width: 100%;
-        height: auto;
+    .section-with-content {
+        padding: 25px 0;
     }
-
+    
     /*--------Quem somos -----------*/
-
-    .video-content{
-        flex-direction: column;
+    
+    h2 {
+        font-size: 30px;
     }
 
     .video-text{
-        width: 350px;
+        font-size: 15px;
     }
-
+    
     .video-content iframe{
-        width: 300px;
-        margin-top: 40px;
+        width: 100%;
+        height: auto;
     }
 
     /*--------nosso conteúdo -----------*/
@@ -633,22 +666,19 @@ footer p {
     #nosso-material{
         margin: 10px;
     }
-    .nosso-content{
-        flex-direction: column;   
-    }
+   
     .nosso-content img.img1{
-        width: 350px;
+        width: 250px;
     }
     .nosso-content img.img2{
-        margin-top:70px;
+        margin: 30px 0 20px;
         width: 50px;
     }
     .nosso-content img.img3{
-        width: 350px;
+        width: 250px;
     }
     .material{
-        font-size: 28px;
-        margin-bottom: -40px;
+        font-size: 15px;
     }
 }
 
@@ -658,26 +688,22 @@ footer p {
     }
     .video-text{
         width: 300px;
-        font-size: 24px;
+        font-size: 15px;
     }
     .parc-text{
         margin:5px;
         padding-top: 20px;
-        font-size: 24px;
+        font-size: 15px;
     }
 
     #nosso-material{
         padding-bottom: 30px;
     }
-    .nosso-content img.img1{
-        width: 300px;
-    }
+    
     .nosso-content img.img2{
-        width: 50px;
+        width: 30px;
     }
-    .nosso-content img.img3{
-        width: 300px;
-    }
+
     footer {
         flex-direction: column;
     }
