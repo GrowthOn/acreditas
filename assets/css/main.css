@@ -26,10 +26,7 @@ main {
 }
 
 
-#logo {
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
+
 header {
     width: 100%;
     height: 85px;
@@ -240,6 +237,7 @@ form button:disabled {
     font-size: 28px;
     margin:60px;
     width: 582px;
+    text-align: justify;
 }
 
 /* Parceria  ---------------------------- */
@@ -267,6 +265,7 @@ form button:disabled {
     font-size: 28px;
     margin:60px;
     color: #FFFFFF;
+    text-align: justify;
 }
 
 .parceria-content img{
@@ -275,12 +274,12 @@ form button:disabled {
 
 /* nosso conteudo ---------------------------- */
 
-#nosso-conteudo{
+#nosso-material{
     margin: 100px;
     background: #ffff;
 }
 
-#nosso-conteudo h1{
+#nosso-material h1{
     font-weight: 600;
     font-size: 60px;
     text-align: center;
@@ -631,7 +630,7 @@ footer p {
     }
 
     /*--------nosso conteúdo -----------*/
-    #nosso-conteudo{
+    #nosso-material{
         margin: 10px;
     }
     .nosso-content{
@@ -650,6 +649,7 @@ footer p {
     .material{
         font-size: 28px;
         margin-bottom: -40px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -666,7 +666,7 @@ footer p {
         font-size: 24px;
     }
 
-    #nosso-conteudo{
+    #nosso-material{
         padding-bottom: 30px;
     }
     .nosso-content img.img1{
@@ -677,6 +677,7 @@ footer p {
     }
     .nosso-content img.img3{
         width: 300px;
+    }
     footer {
         flex-direction: column;
     }
