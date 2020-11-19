@@ -41,10 +41,21 @@
         <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/970656a389c75f737d23c595d/052e8a24d93cf7156fd757c33.js");</script>
     </head>
     <body>
+        <header>
+            <nav>
+                <img id="logo" src="./assets/img/LogoAcreditasLP.svg" alt="Acredita$" />
+                <ul class="menu-closed">
+                    <li id="home">Home</li>
+                    <li id="quem-somos">Quem somos</li>
+                    <li id="parceria">Parceria</li>
+                    <li id="nosso-conteudo">Nosso conteúdo</li>
+                </ul>
+                <button id="menu-toggle">
+                    <img src="./assets/img/menu-icon.svg" />
+                </button>
+            </nav>
+        </header>
         <main>
-            <section id="logo">
-                <img src="./assets/img/LogoAcreditas.svg" alt="Acredita$" />
-            </section>
             <section id="content">
                 <div class="content-left">
                     <div class="banner">
@@ -68,12 +79,13 @@
                     <hr />
                     <form method="POST" action="https://smtl.gama.academy/leads/1ccc7f63-25e3-11eb-bf8d-0d63c80760d2">
                         <label for="name_field">Nome completo:</label>
-                        <input type="text" id="name_field" class="form-control" name="name" pattern="^\D{2,}\s[\D\s]{2,}$" required >
+                        <input type="text" id="name_field" name="name" pattern="^\D{2,}\s[\D\s]{2,}$" required />
                         <label for="email_field">Digite seu e-mail:</label>
-                        <input type="email" id="email_field" name="email" class="form-control" required />
+                        <input type="email" id="email_field" name="email" required />
                         <input name="redirectTo" type="hidden" value="https://growthon.github.io/acreditas/thank-you" />
                         <!-- <input name="debugMode" type="hidden" value="true" /> -->
-                        <button type="submit" class="btn btn-blue btn-block" disabled>E-book GRÁTIS</button>
+                        <p>Fique tranquilo, não enviamos spam!</p>
+                        <button type="submit">E-book GRÁTIS</button>
                     </form>
                 </div>
             </section>
@@ -81,6 +93,18 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/a_Ex4OYEw9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
         </main>
+        <footer>
+            <p>GrowthOn | © 2020 All rights reserved</p>
+            <div id="social">
+                <a href="#">
+                    <img src="./assets/img/fb-icon.svg" alt="Link para o Facebook">
+                </a>
+                <a href="#">
+                    <img src="./assets/img/ig-icon.svg" alt="Link para o Instagram">
+                </a>
+            </div>
+        </footer>
+        <script src="./assets//js/zenscroll/zenscroll-min.js"></script>
         <script src="./assets/js/index.js"></script>
     </body>
 </html>
