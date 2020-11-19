@@ -285,6 +285,15 @@ h2 {
     flex-basis: 60%;
 }
 
+.parc-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.parc-text a:hover {
+    text-decoration: underline;
+}
+
 .parceria-content img{
     max-width: 500px;
     flex-basis: 40%;
