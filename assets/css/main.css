@@ -30,12 +30,60 @@ main {
     margin-bottom: 40px;
     margin-top: 20px;
 }
+header {
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    top: 0;
+    transition: background .5s linear;
+    background: linear-gradient(270deg, #17D1CE -4.9%, #169BC7 79.88%);
+    z-index: 1;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+nav #logo {
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul li:nth-child(1) {
+    display: none;
+}
+
+nav ul li:nth-child(2), nav ul li:nth-child(3) {
+    margin-right: 20px;
+}
+
+#checkbox-toggle, #menu-toggle {
+    display: none;
+}
 
 #content {
 	display: flex;
     max-width: 1170px;
     width: 90%;
-	margin: 0 auto;
+    margin: 0 auto;
+    padding-top: 135px;
 }
 
 .content-left {
@@ -98,7 +146,7 @@ main {
     flex-basis: 40%;
 }
 
-.content-right p {
+.content-right > p {
     font-size: 30px;
     text-align: center;
     color: #4D4D4D;
@@ -135,10 +183,14 @@ form input:invalid {
     box-shadow: none;
 }
 
+form p {
+    font-size: 16px;
+    margin: 40px 0 30px;
+}
+
 form button {
 	width: 200px;
 	height: 70px;
-	margin-top: 30px;
 	font-family: inherit;
 	font-weight: 700;
 	background: #44C5EE;
@@ -292,8 +344,10 @@ footer p{
 
 #thank-you {
     max-width: 831px;
+    width: 90%;
     color: #fff;
     text-align: center;
+    margin-top: 85px;
 }
 
 #thank-you h1 {
@@ -335,6 +389,36 @@ footer p{
 }
 
 
+footer {
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+footer p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #A0A0A0;
+}
+
+#social {
+    display: inline-flex;
+}
+
+#social a {
+    width: 40px;
+    height: 40px;
+}
+
+#social img {
+    height: 100%;
+}
+
+#social a:first-child {
+    margin-right: 20px;
+}
 
 @media screen and (max-width: 992px) and (orientation: landscape) {
     html, body {
@@ -397,12 +481,53 @@ footer p{
         padding: 20px;
     }
 
-    #logo {
-        margin-bottom: 80px;
+    nav {
+        padding: 20px 0;
     }
 
-    #logo img {
-        width: 200px;
+    nav ul {
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(270deg, #17D1CE -4.9%, #169BC7 79.88%);
+        text-align: center;
+        padding: 0 30px;
+        display: initial;
+    }
+   
+    nav ul li {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-right: 0;
+        padding: 20px 0;
+    }
+
+    nav ul li:nth-child(1) {
+        display: block;
+    }
+
+    nav ul li:nth-child(1), nav ul li:nth-child(2), nav ul li:nth-child(3) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    nav ul li:nth-child(4) {
+        padding-top: 20px;
+    }
+    
+    #menu-toggle {
+        display: block;
+        order: -1;
+        background-color: transparent;
+        border: 0;
+    }
+
+    #menu-toggle img {
+        pointer-events: none;
+    }
+    
+    .menu-closed {
+        display: none;
     }
 
     #content {
@@ -457,12 +582,17 @@ footer p{
         padding: 35px;
     }
 
-    .content-right p {
+    .content-right > p {
         font-size: 20px;
     }
 
     form label {
         font-size: 12px;
+    }
+
+    form p {
+        font-size: 12px;
+        margin: 30px 0 20px;
     }
 
     iframe {
@@ -547,5 +677,11 @@ footer p{
     }
     .nosso-content img.img3{
         width: 300px;
+    footer {
+        flex-direction: column;
+    }
+
+    #social {
+        margin-top: 20px;
     }
 }
