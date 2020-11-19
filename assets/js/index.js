@@ -10,7 +10,7 @@ window.onload = () => {
 }
 
 [logo, ...menuItems].forEach(item => item.addEventListener('click', e => {
-    const {id} = e.target
+    const { id } = e.target
     body.removeEventListener('touchstart', closeMenu)
     if (id === 'logo') return
     menu.classList.toggle('menu-closed')
