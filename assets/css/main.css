@@ -209,8 +209,10 @@ form button:disabled {
 
 #thank-you {
     max-width: 831px;
+    width: 90%;
     color: #fff;
     text-align: center;
+    margin-top: 85px;
 }
 
 #thank-you h1 {
