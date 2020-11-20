@@ -259,7 +259,6 @@ h2 {
     font-size: 28px;
     margin-left: 60px;
     width: 582px;
-    text-align: justify;
 }
 
 /* Parceria  ---------------------------- */
@@ -281,7 +280,6 @@ h2 {
 .parc-text{
     font-size: 28px;
     color: #FFFFFF;
-    text-align: justify;
     flex-basis: 60%;
 }
 
@@ -494,7 +492,6 @@ footer p {
         margin: 0;
         font-size: 24px;
         width: 100%;
-        text-align: center;
     }
 
     /*-------- Parceria -----------*/
@@ -658,11 +655,11 @@ footer p {
 
     .video-text{
         font-size: 15px;
+        text-align: justify;
     }
     
     .video-content iframe{
         width: 100%;
-        height: auto;
     }
 
     /*--------nosso conteúdo -----------*/
@@ -676,8 +673,10 @@ footer p {
     }
 
     .parc-text{
+        font-size: 15px;
         margin:10px;
         padding-top: 20px;
+        text-align: justify;
     }
 
     /*--------nosso conteúdo -----------*/
@@ -711,7 +710,6 @@ footer p {
     .parc-text{
         margin:5px;
         padding-top: 20px;
-        font-size: 15px;
     }
 
     #nosso-material{
