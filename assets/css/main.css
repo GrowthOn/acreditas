@@ -627,10 +627,9 @@ footer p {
         order: -1;
         width: 90%;
     }
-
-    .parc-text{
+    .parc-text {
         font-size: 15px;
-        margin:10px;
+        margin: 10px;
         padding-top: 20px;
         text-align: center;
     }
