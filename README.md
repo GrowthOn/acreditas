@@ -77,7 +77,7 @@ Este projeto foi desenvolvido utilizando:
 Para acessar nosso layout clique [Figma](https://www.figma.com/file/ZI66bLVJ3kD4ABqXomAwdd/ACREDITA-prot%C3%B3tipo-4?node-id=2%3A0).
 
 ## :information_source: Como usar
-Para clonar e rodar esta aplicação você vai precisar do [Git](https://git-scm.com) e se preferir [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+Para clonar e rodar esta aplicação você vai precisar do [Git](https://git-scm.com) e se preferir [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) ou executar o index.html diretamente.
 
 Pela linha de comando:
 
