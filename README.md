@@ -22,13 +22,13 @@
   </a>
 </p>
 <p align="center">
-  <a href="#-acreditas">Acreditas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-acreditas">Acreditas</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-Tecnologias">Tecnologias</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-Como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-	<a href="#-Criado-por">Criado por</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#black_nib-Como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Como-usar">Como usar</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="#black_nib-criado-por">Criado por</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-Como-contribuir">Como contribuir</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#memo-license">Licença</a>
 </p>
 
