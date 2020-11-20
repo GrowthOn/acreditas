@@ -38,7 +38,7 @@ Acredita$ é uma empresa fictícia de educação financeira.
 
 ## 💻 Projeto
 
-A [landing](https://growthon.github.io/acreditas/) page da marca foi criada como solução para o assignment *Show Me The Leads*, um projeto do Gama Experience que visa captar leads qualificados para a Creditas.
+A [landing](https://bit.ly/2H7iFtg) page da marca foi criada como solução para o assignment *Show Me The Leads*, um projeto do Gama Experience que visa captar leads qualificados para a Creditas.
 
 <h1 align="center">
     <img alt="Example" title="Example" src=".github/Demo-acreditas.gif" width="500px" />
