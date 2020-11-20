@@ -29,7 +29,7 @@
   <a href="#-Como-usar">Como usar</a>&nbsp;&nbsp;|&nbsp;&nbsp;
 	<a href="#black_nib-criado-por">Criado por</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#-Como-contribuir">Como contribuir</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#memo-license">Licença</a>
+  <a href="#memo-licença">Licença</a>
 </p>
 
 ## :information_source: O que é a Acreditas?
