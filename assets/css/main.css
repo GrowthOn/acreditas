@@ -263,7 +263,6 @@ h2 {
 
 #parceria-section {
     background: #17D1CE;
-    padding-bottom: 60px;
 }
 
 #parceria-section h2 {
@@ -516,7 +515,7 @@ footer p {
         right: 0;
         background: linear-gradient(270deg, #17D1CE -4.9%, #169BC7 79.88%);
         text-align: center;
-        padding: 0 30px;
+        padding: 0 30px 20px;
         display: initial;
     }
     nav ul li {
@@ -548,7 +547,7 @@ footer p {
         display: none;
     }
     #content {
-        flex-direction: column;
+        /* padding-bottom: 40px; */
         width: 100%;
     }
     .section-wrapper {
@@ -613,7 +612,7 @@ footer p {
     }
     .video-text {
         font-size: 15px;
-        text-align: justify;
+        text-align: center;
     }
     .video-content iframe {
         width: 100%;
@@ -631,7 +630,7 @@ footer p {
         font-size: 15px;
         margin:10px;
         padding-top: 20px;
-        text-align: justify;
+        text-align: center;
     }
     /*--------nosso conteúdo -----------*/
     #nosso-material {
@@ -674,5 +673,7 @@ footer p {
     }
     #social {
         margin-top: 20px;
+        justify-content: space-between;
+        width: 100%;
     }
 }
