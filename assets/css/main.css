@@ -24,6 +24,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 85px;
+    min-height: 100%;
 }
 
 header {
